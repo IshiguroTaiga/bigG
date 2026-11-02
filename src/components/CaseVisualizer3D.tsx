@@ -1,6 +1,6 @@
 import React, { Suspense, Component, ReactNode } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, RoundedBox, Text } from '@react-three/drei';
+import { OrbitControls, RoundedBox } from '@react-three/drei';
 import { PartCategory, PCBuildState } from '../types/pc';
 import { evaluateCompatibility } from '../engine/compatibilityEngine';
 import { CaseVisualizer2D } from './CaseVisualizer2D';
@@ -126,15 +126,6 @@ const PCInteriorScene: React.FC<CaseVisualizer3DProps> = ({
             roughness={0.5}
           />
         </RoundedBox>
-        <Text
-          position={[0, 1.15, 0.08]}
-          fontSize={0.14}
-          color="#e2e8f0"
-          anchorX="center"
-          anchorY="middle"
-        >
-          {build.motherboard ? build.motherboard.name : 'Motherboard Slot'}
-        </Text>
       </group>
 
       {/* CPU Socket & Chip */}
@@ -152,15 +143,6 @@ const PCInteriorScene: React.FC<CaseVisualizer3DProps> = ({
             roughness={0.25}
           />
         </RoundedBox>
-        <Text
-          position={[0, 0, 0.08]}
-          fontSize={0.11}
-          color="#ffffff"
-          anchorX="center"
-          anchorY="middle"
-        >
-          {build.cpu ? build.cpu.socket : 'CPU'}
-        </Text>
       </group>
 
       {/* CPU Cooler (Tower or AIO Block + Top Radiator) */}
@@ -257,17 +239,6 @@ const PCInteriorScene: React.FC<CaseVisualizer3DProps> = ({
             opacity={build.gpu ? 1 : 0.45}
           />
         </RoundedBox>
-        <Text
-          position={[0, 0, 0.56]}
-          fontSize={0.13}
-          color="#ffffff"
-          anchorX="center"
-          anchorY="middle"
-        >
-          {build.gpu
-            ? `${build.gpu.chipset} (${build.gpu.lengthMm}mm)`
-            : 'GPU PCIe x16 Slot'}
-        </Text>
       </group>
 
       {/* Storage Bay */}
@@ -288,15 +259,6 @@ const PCInteriorScene: React.FC<CaseVisualizer3DProps> = ({
             roughness={0.5}
           />
         </RoundedBox>
-        <Text
-          position={[0, 0, 0.25]}
-          fontSize={0.11}
-          color="#f8fafc"
-          anchorX="center"
-          anchorY="middle"
-        >
-          {`Storage (${build.storage.length})`}
-        </Text>
       </group>
 
       {/* Power Supply (PSU Shroud at Bottom) */}
@@ -314,15 +276,6 @@ const PCInteriorScene: React.FC<CaseVisualizer3DProps> = ({
             roughness={0.4}
           />
         </RoundedBox>
-        <Text
-          position={[0, 0, 0.7]}
-          fontSize={0.13}
-          color="#ffffff"
-          anchorX="center"
-          anchorY="middle"
-        >
-          {build.psu ? `PSU: ${build.psu.wattage}W (${build.psu.formFactor})` : 'PSU Bay'}
-        </Text>
       </group>
     </group>
   );
