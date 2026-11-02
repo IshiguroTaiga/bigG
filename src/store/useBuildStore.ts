@@ -24,6 +24,7 @@ export type ActiveTab =
   | 'guide';
 
 interface BuildStoreState {
+  projectEdition: 'bigG' | 'rcssln';
   currentBuild: PCBuildState;
   activeCategory: PartCategory;
   activeTab: ActiveTab;
@@ -34,6 +35,7 @@ interface BuildStoreState {
   comparisonIds: string[];
 
   // Actions
+  setProjectEdition: (edition: 'bigG' | 'rcssln') => void;
   setActiveCategory: (category: PartCategory) => void;
   setActiveTab: (tab: ActiveTab) => void;
   setVisualizerMode: (mode: '3d' | '2d') => void;
@@ -108,6 +110,7 @@ export function deserializeBuildFromCode(code: string): PCBuildState | null {
 export const useBuildStore = create<BuildStoreState>()(
   persist(
     (set, get) => ({
+      projectEdition: 'bigG',
       currentBuild: PRESET_BUILDS[2].build,
       activeCategory: 'cpu',
       activeTab: 'home',
@@ -117,6 +120,7 @@ export const useBuildStore = create<BuildStoreState>()(
       savedBuilds: [],
       comparisonIds: ['gpu-rtx-4060', 'gpu-rx-7700xt', 'gpu-rtx-4070-super'],
 
+      setProjectEdition: (edition) => set({ projectEdition: edition }),
       setActiveCategory: (category) => set({ activeCategory: category }),
       setActiveTab: (tab) => set({ activeTab: tab }),
       setVisualizerMode: (mode) => set({ visualizerMode: mode }),
@@ -319,6 +323,7 @@ export const useBuildStore = create<BuildStoreState>()(
     {
       name: 'mmsu-digital-pc-builder-storage-v2',
       partialize: (state) => ({
+        projectEdition: state.projectEdition,
         currentBuild: state.currentBuild,
         darkMode: state.darkMode,
         beginnerMode: state.beginnerMode,
