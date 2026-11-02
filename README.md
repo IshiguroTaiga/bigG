@@ -103,4 +103,4 @@ bigG/
 
 ---
 
-> **Disclaimer:** Component prices (in PHP), synthetic benchmark scores, and physical dimensions are curated sample datasets for educational and capstone demonstration purposes. Verify official manufacturer datasheets and retail pricing before physical purchase.
+> **Disclaimer:** Component prices (in PHP), synthetic benchmark scores, and physical dimensions are curated sample datasets for educational and project demonstration purposes. Verify official manufacturer datasheets and retail pricing before physical purchase.
