@@ -1,7 +1,6 @@
 # Digital PC Builder: Virtual Compatibility & Simulation System
 
-> **Institution:** College of Computing and Information Sciences (CCIS), Mariano Marcos State University (MMSU), Batac City, Ilocos Norte, Philippines  
-> **Project Type:** University IT / Computer Science Capstone Project & Full-Stack Web Engineering System
+> **SUKATAN U CONTENTS:**
 
 ---
 
