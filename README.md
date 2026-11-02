@@ -88,7 +88,7 @@ bigG/
 
 ---
 
-## 7. Team Credits (MMSU College of Computing and Information Sciences)
+## 7. Peoples
 - **Justine Dwight Acoba**
 - **John Benedict Alberto**
 - **Arom Sylon Apostle Alcausin**
