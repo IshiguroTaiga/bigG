@@ -107,7 +107,6 @@
 >
 > They didn't understand bottlenecks, so the Simulation tab explains them. They didn't know which parts were needed, so the Builder lists all eight. They thought expensive meant better, so the Compare tab shows value for money. They were afraid to buy without descriptions, so every part in the Builder has a description and plain-language warnings. They wanted to compare parts, which is the Compare tab. And they wanted to know a build runs smoothly, which is the Simulation tab.
 >
-> To make sure these features work, we wrote 19 automatic checks that give the website common mistakes and confirm it catches them. All 19 passed.
 
 ---
 
