@@ -1,5 +1,7 @@
 # Digital PC Builder: Virtual Compatibility & Simulation System
 
+**Live site:** https://bigg-one.vercel.app
+
 > **SUKATAN U CONTENTS:**
 
 ---
@@ -53,7 +55,8 @@ npm run build     # Build production bundle into /dist
 ## 5. Project Structure
 ```text
 bigG/
-├── docs/                                   # Full Academic Capstone Documentation (01 to 09)
+├── docs/                                   # Full Academic Capstone Documentation (01 to 10)
+│   ├── assets/                             # Final presentation deck (.pptx) + design thinking mind map
 │   ├── 01-project-proposal.md
 │   ├── 02-requirements-specification.md
 │   ├── 03-system-design.md
@@ -62,7 +65,8 @@ bigG/
 │   ├── 06-competitive-analysis.md
 │   ├── 07-limitations-and-future-work.md
 │   ├── 08-defense-qa.md
-│   └── 09-presentation-script.md
+│   ├── 09-presentation-script.md
+│   └── 10-design-thinking.md
 ├── src/
 │   ├── config/constants.ts                 # Currency (PHP), disclaimers, glossary, workload profiles
 │   ├── types/pc.ts                         # Strict TypeScript interfaces for parts, rules, XAI & sim
@@ -100,6 +104,15 @@ bigG/
 - **Micko Gabriel Permison**
 - **Stephen Jay Polendey**
 - **Rhed Luis Ratuita**
+
+---
+
+## 8. Presentation
+- **Live demo:** https://bigg-one.vercel.app
+- **Presentation script (10–12 min + Q&A, all 12 members):** [docs/09-presentation-script.md](docs/09-presentation-script.md)
+- **Design thinking process (Empathize → Define → Ideate → Prototype → Test):** [docs/10-design-thinking.md](docs/10-design-thinking.md)
+- **Final deck:** [docs/assets/Digital-PC-Builder-Final.pptx](docs/assets/Digital-PC-Builder-Final.pptx)
+- **Design thinking mind map:** [docs/assets/mindmap.png](docs/assets/mindmap.png)
 
 ---
 
